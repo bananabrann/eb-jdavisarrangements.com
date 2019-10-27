@@ -5,7 +5,7 @@
     <div class="songs-container">
         {% for song in songs %}
             <div class="song">
-                <h2><a href="#">{{ song.title }}</a></h2>
+                <h2><a href="{% url 'songs:detail' slug=song.slug %}">{{ song.title }}</a></h2>
                 <p>{{ song.snippet }}</p>
                 <p>{{ song.date }}</p>
             </div>
