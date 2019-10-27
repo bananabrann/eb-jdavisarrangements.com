@@ -7,3 +7,6 @@ class Song(models.Model):
     date = models.DateTimeField(auto_now_add=True)
     # add in thumbnail
     # add in song file
+
+    def __str__(self):
+        return self.title
