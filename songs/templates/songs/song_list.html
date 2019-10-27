@@ -8,5 +8,14 @@
 </head>
 <body>
     <h1>Song List</h1>
+    <div class="songs-container">
+        {% for song in songs %}
+            <div class="song">
+                <h2><a href="#">{{ song.title }}</a></h2>
+                <p>{{ song.desc }}</p>
+                <p>{{ song.date }}</p>
+            </div>
+        {% endfor %}
+    </div>
 </body>
 </html>
