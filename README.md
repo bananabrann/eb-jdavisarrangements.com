@@ -7,10 +7,10 @@ Then run local server with `python3 manage.py runserver`
 
 ### Step by Step
 1. Clone repo `git@github.com:bananabrann/eb-jdavisarrangements.com.git`
-1. Create virtual enviroment. Example: `virtualenv ~/.virtualenviroments/eb-jdavisarrangements`
+2. Create virtual enviroment. Example: `virtualenv ~/.virtualenviroments/eb-jdavisarrangements`
 > Download virtualenv with `sudo pip3 install virtualenv`, or `sudo apt-get install python-virtualenv`
-1. `cd` into the jdavisarrangements directory, then install requirements: `pip3 install -r requirements.txt`
-1. You're done! The website is used with Django. Start server and view the site with `python3 manage.py runserver`
+3. `cd` into the jdavisarrangements directory, then install requirements: `pip3 install -r requirements.txt`
+4. You're done! The website is used with Django. Start server and view the site with `python3 manage.py runserver`
 
 ## Windows systems
 1. Switch to a Linux
