@@ -5,6 +5,7 @@ class Song(models.Model):
     slug = models.SlugField()
     desc = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
+    audio = models.FileField(upload_to='media/')
     # add in thumbnail
     # add in song file
 
