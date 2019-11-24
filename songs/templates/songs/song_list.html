@@ -1,16 +1,16 @@
 {% extends 'base_layout.html' %}
 
 {% block content %}
-<div class="songs-container col-md-9">
+<div id="songs-list-area">
     <h1>Song List</h1>
+    
     {% for song in songs %}
-        <div class="song">
+        <div class="song-tile">
             <h2><a href="{% url 'songs:detail' slug=song.slug %}">{{ song.title }}</a></h2>
             <p>{{ song.snippet }}</p>
             <p>{{ song.date }}</p>
             <audio controls>
                 <source src="{{ song.audio.url }}" type="audio/mpeg" >
-                <!-- <source src="{{ song.audio }}" type="audio/mpeg" > NOTE: This gives same output--> 
             </audio>
             {{ song.audio }}
         </div>
