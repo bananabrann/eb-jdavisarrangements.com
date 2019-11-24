@@ -1,0 +1,5 @@
+@import './root.css';
+
+body {
+    background-color: var(--color-off-white);
+}

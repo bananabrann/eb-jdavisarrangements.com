@@ -1,0 +1,6 @@
+@import './root.css';
+
+#sidenav {
+  /* background-color: rgb(172, 172, 172); */
+  background-color: var(--color-light-grey);
+}
