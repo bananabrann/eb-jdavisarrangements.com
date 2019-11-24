@@ -21,18 +21,26 @@
     
     <div class="container-fluid">
         <div class="row">
-            <sidenav class="col-md-3">
+            <sidenav class="col-md-4" id="sidenav">
                 <h2>Jon Davis</h2>
                 <p><a href="{% url 'homepage' %}" >Home</a></p>
                 <p><a href="{% url 'about' %}">About Me</a></p>
                 <p><a href="{% url 'songs:list' %}">Songs list</a></p>
             </sidenav>
             
-            <body class="">
-                <div class="wrapper">
-                    {% block content %}
-                    {% endblock %}
+            <body class="col-md-8">
+                <div class="row">
+                    <div class="container">
+                        <h3>Test</h3>
+                    </div>
                 </div>
+                <div class="row">
+                    <div class="container">
+                        {% block content %}
+                        {% endblock %}
+                    </div>
+                </div>
+
             </body>
         </div>
     </div>
