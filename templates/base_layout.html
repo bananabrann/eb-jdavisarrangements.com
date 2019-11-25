@@ -24,19 +24,19 @@
         <p>Resize this responsive page to see the effect!</p> 
     </div>
     
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <sidenav class="col-sm-4" id="sidenav">
+            <div class="col-sm-4" id="sidenav">
                 <h2>Jon Davis</h2>
                 <p><a href="{% url 'homepage' %}" >Home</a></p>
                 <p><a href="{% url 'about' %}">About Me</a></p>
                 <p><a href="{% url 'songs:list' %}">Songs list</a></p>
-            </sidenav>
+            </div>
             
-            <body class="col-md-8">
+            <div class="col-md-8">
                 {% block content %}
                 {% endblock %}
-            </body>
+            </div>
         </div>
     </div>
 </html>
