@@ -18,10 +18,15 @@
         
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>My First Bootstrap 4 Page</h1>
+        <p>Resize this responsive page to see the effect!</p> 
+    </div>
     
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <sidenav class="col-md-4" id="sidenav">
+            <sidenav class="col-sm-4" id="sidenav">
                 <h2>Jon Davis</h2>
                 <p><a href="{% url 'homepage' %}" >Home</a></p>
                 <p><a href="{% url 'about' %}">About Me</a></p>
@@ -29,18 +34,8 @@
             </sidenav>
             
             <body class="col-md-8">
-                <div class="row">
-                    <div class="container">
-                        <h3>Test</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="container">
-                        {% block content %}
-                        {% endblock %}
-                    </div>
-                </div>
-
+                {% block content %}
+                {% endblock %}
             </body>
         </div>
     </div>
