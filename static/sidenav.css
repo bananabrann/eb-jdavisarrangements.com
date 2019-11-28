@@ -1,0 +1,8 @@
+/* TODO: Figure out Django static files situation */
+
+@import './root.css';
+
+.sidenav-link, #sidenav a {
+    font-family: 'Work Sans', sans-serif;
+    color: green;
+}
