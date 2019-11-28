@@ -2,7 +2,11 @@
 
 @import './root.css';
 
+#sidenav {
+    background-color: var(--color-off-white);
+}
+
 .sidenav-link, #sidenav a {
     font-family: 'Work Sans', sans-serif;
-    color: green;
+    color: red;
 }
