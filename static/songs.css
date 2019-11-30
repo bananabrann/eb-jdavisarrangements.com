@@ -1,9 +1,0 @@
-@import './root.css';
-
-.song {
-    margin-bottom: 10px;
-}
-
-.song .card-title h2, .song .card-title a {
-    color: green;
-}
