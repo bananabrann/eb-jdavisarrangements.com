@@ -4,9 +4,13 @@
 
 #sidenav {
     background-color: var(--color-off-white);
+    height: 100%;
 }
 
 .sidenav-link, #sidenav a {
-    font-family: 'Work Sans', sans-serif;
-    color: red;
+    color: rgb(29, 29, 29);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    
 }

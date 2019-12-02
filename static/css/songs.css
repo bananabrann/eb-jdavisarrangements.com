@@ -1,5 +1,10 @@
 @import './root.css';
 
 .song {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    background-color: lightgoldenrodyellow;
+}
+
+.song h2 {
+    
 }

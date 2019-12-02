@@ -14,7 +14,10 @@
         <!-- Font Awesome Kit Code -->
         <script src="https://kit.fontawesome.com/fe870a47f2.js" crossorigin="anonymous"></script>
 
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="{% static 'css/sidenav.css' %}" >
+        <link rel="stylesheet" href="{% static 'css/songs.css' %}" >
     </head>
 
     <div class="jumbotron text-center" style="margin-bottom:0">
@@ -26,8 +29,8 @@
         <div class="row">
             <div class="col-md-3" id="sidenav">
                 <p class="sidenav-link"><a href="{% url 'homepage' %}" >Home</a></p>
-                <p><a href="{% url 'about' %}">About Me</a></p>
-                <p><a href="{% url 'songs:list' %}">Songs list</a></p>
+                <p class="sidenav-link"><a href="{% url 'about' %}">About Me</a></p>
+                <p class="sidenav-link"><a href="{% url 'songs:list' %}">Songs list</a></p>
                 
                 <div class="container">
                     <p>Here is ending text for the footer. This is just temporary text.</p>
