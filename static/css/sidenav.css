@@ -1,0 +1,16 @@
+/* TODO: Figure out Django static files situation */
+
+@import './root.css';
+
+#sidenav {
+    background-color: var(--color-off-white);
+    height: 100%;
+}
+
+.sidenav-link, #sidenav a {
+    color: rgb(29, 29, 29);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    
+}
