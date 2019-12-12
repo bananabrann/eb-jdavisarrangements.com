@@ -1,33 +1,46 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="{% static 'styles.css' %}" >
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,700&display=swap" rel="stylesheet">
         <title>Jon Davis Arrangements</title>
         
+        <!-- Bootstrap 4 -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- Font Awesome Kit Code -->
+        <script src="https://kit.fontawesome.com/fe870a47f2.js" crossorigin="anonymous"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="{% static 'css/sidenav.css' %}" >
+        <link rel="stylesheet" href="{% static 'css/songs.css' %}" >
     </head>
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>Jon Davis Arrangements</h1>
+        <p>There will be a cool picture here!</p> 
+    </div>
     
     <div class="container-fluid">
         <div class="row">
-            <sidenav class="col-md-3">
-                <h2>Side Nav</h2>
-                <p><a href="{% url 'homepage' %}">Home</a></p>
-                <p><a href="{% url 'songs:list' %}">Songs list</a></p>
-            </sidenav>
-        
-            <body class="">
-                <div class="wrapper">
-                    {% block content %}
-                    {% endblock %}
+            <div class="col-md-3" id="sidenav">
+                <p class="sidenav-link"><a href="{% url 'homepage' %}" >Home</a></p>
+                <p class="sidenav-link"><a href="{% url 'about' %}">About Me</a></p>
+                <p class="sidenav-link"><a href="{% url 'songs:list' %}">Songs list</a></p>
+                
+                <div class="container">
+                    <p>Here is ending text for the footer. This is just temporary text.</p>
                 </div>
-            </body>
+            </div>
+            
+            <div class="col-md-9">
+                {% block content %}
+                {% endblock %}
+            </div>
         </div>
     </div>
 </html>
