@@ -2,7 +2,9 @@
 ## MacOS and Ubuntu systems
 ### Easy-Peasy One-Liner
 _Replace {variables} with the appropiate path_
+
 `git@github.com:bananabrann/eb-jdavisarrangements.com.git && virtualenv <Your Enviroment Path>/eb-jdavisarrangements && source <Your Enviroment Path>/eb-jdavisarrangements/bin/activate && cd ebjdavisarrangements.com && pip3 install -r requirements.txt`
+
 Then run local server with `python3 manage.py runserver`
 
 ### Step by Step
