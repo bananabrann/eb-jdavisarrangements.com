@@ -1,16 +1,37 @@
-/* TODO: Figure out Django static files situation */
-
 @import './root.css';
 
 #sidenav {
-    background-color: var(--color-off-white);
-    height: 100%;
+    /* background-color: var(--color-off-white-trans); */
+    padding: 14px 0 0 0;
+    border-right: 1.5px solid var(--color-off-black-trans);
 }
 
 .sidenav-link, #sidenav a {
-    color: rgb(29, 29, 29);
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-off-black);
+}
+
+.sidenav-link {
     font-size: 18px;
     font-weight: 600;
-    font-family: 'Raleway', sans-serif;
-    
+    letter-spacing: 1.5px;
+    transition: 500ms ease-in-out;
+    opacity: 0.5;
+}
+
+.sidenav-link:hover {
+    background-color: var(--color-light-grey-trans);
+    transition: 500ms ease-in-out;
+    letter-spacing: 4px;
+    opacity: 1;
+}
+
+#sidenav-footer {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--color-off-black-trans);
+    letter-spacing: 1.2px;
+    font-size: 8px;
+    text-transform: uppercase;
 }
