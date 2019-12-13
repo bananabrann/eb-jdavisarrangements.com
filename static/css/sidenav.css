@@ -1,8 +1,9 @@
 @import './root.css';
 
 #sidenav {
-    background-color: var(--color-off-white);
+    /* background-color: var(--color-off-white-trans); */
     padding: 14px 0 0 0;
+    border-right: 1.5px solid var(--color-off-black-trans);
 }
 
 .sidenav-link, #sidenav a {
@@ -17,10 +18,20 @@
     font-weight: 600;
     letter-spacing: 1.5px;
     transition: 500ms ease-in-out;
+    opacity: 0.5;
 }
 
 .sidenav-link:hover {
-    background-color: var(--color-light-grey);
+    background-color: var(--color-light-grey-trans);
     transition: 500ms ease-in-out;
     letter-spacing: 4px;
+    opacity: 1;
+}
+
+#sidenav-footer {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--color-off-black-trans);
+    letter-spacing: 1.2px;
+    font-size: 8px;
+    text-transform: uppercase;
 }

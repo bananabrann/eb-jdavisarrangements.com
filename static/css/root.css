@@ -1,5 +1,10 @@
 :root {
     --color-off-white: rgb(240, 240, 240);
+    --color-off-white-trans: rgba(240, 240, 240, 0.5);
     --color-light-grey: rgb(221, 221, 221);
+    --color-light-grey-trans: rgba(221, 221, 221, 0.5);
+    --color-grey: rgb(167, 167, 167);
+
     --color-off-black: rgb(51, 51, 51);
+    --color-off-black-trans: rgba(51, 51, 51, 0.5);
 }
