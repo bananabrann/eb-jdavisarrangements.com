@@ -15,6 +15,9 @@
         <script src="https://kit.fontawesome.com/fe870a47f2.js" crossorigin="anonymous"></script>
 
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600&display=swap" rel="stylesheet">
+        <!-- font-family: 'Raleway', sans-serif; -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+        <!-- font-family: 'Lato', sans-serif; -->
 
         <link rel="stylesheet" href="{% static 'css/sidenav.css' %}" >
         <link rel="stylesheet" href="{% static 'css/songs.css' %}" >
@@ -28,7 +31,7 @@
     
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3" id="sidenav">
+            <div class="col-md-3 text-center" id="sidenav">
                     <p class="sidenav-link"><a href="{% url 'homepage' %}" >Home</a></p>
                     <p class="sidenav-link"><a href="{% url 'about' %}">About Me</a></p>
                     <p class="sidenav-link"><a href="{% url 'songs:list' %}">Songs list</a></p>

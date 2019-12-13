@@ -2,11 +2,25 @@
 
 #sidenav {
     background-color: var(--color-off-white);
+    padding: 14px 0 0 0;
 }
 
 .sidenav-link, #sidenav a {
-    color: rgb(29, 29, 29);
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-off-black);
+}
+
+.sidenav-link {
     font-size: 18px;
     font-weight: 600;
-    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1.5px;
+    transition: 500ms ease-in-out;
+}
+
+.sidenav-link:hover {
+    background-color: var(--color-light-grey);
+    transition: 500ms ease-in-out;
+    letter-spacing: 4px;
 }
